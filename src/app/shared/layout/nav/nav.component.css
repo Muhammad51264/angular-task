@@ -1,0 +1,28 @@
+.nav-container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    list-style-type:none;
+    padding: 1rem 0;
+    position: fixed;
+    top: -0.125rem;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo{
+    height: fit-content;
+    width: 12.3125rem;
+}
+
+.map-marker{
+    width: 0.875rem;
+    height: 1.5625rem;
+}
+
+.location-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
