@@ -1,5 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background-gray-color:rgba(245, 245, 245, 1);
+  --black-color: #000;
+  --gray-color: rgb(80, 79, 79);
+  --gray-placeholder-color: rgba(158, 158, 158, 1);
+  --green-color: #79b93c;
+  --light-gray-color: rgb(117, 117, 117);
+  --light-green-color: rgb(121, 185, 60, 20%);
+  --light-orange-color: rgba(241, 114, 40, 0.1);
+  --line-gray-color:#EEEEEE;
+  --orange-color: rgb(246, 89, 0);
+  --pink-color: rgb(255, 122, 122);
+  --primary-color: #ffae00;
+  --secondary-color: #f17228;
+  --white-color: #fff;
+  --yellow-font-color: #FFB800;
+  --yellow-shadow-color: rgba(255, 174, 0, 29%);
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+.shadow-effect {
+  box-shadow: 0rem 0.3125rem 0.625rem 0rem var(--yellow-shadow-color),
+    var(--yellow-shadow-color) 0rem 0.1875rem 0.4375rem -0.1875rem;
 }

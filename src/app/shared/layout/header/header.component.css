@@ -1,0 +1,24 @@
+.header-container {
+  align-items: center;
+  background-image: url("/assets/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 38.75rem;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+}
+
+.header-img {
+  margin-top: 14.375rem;
+  position: relative;
+  width: 31.0625rem;
+  z-index: 0;
+}
+
+@media screen and (max-width: 64rem) {
+  .header-img {
+    display: none;
+  }
+}

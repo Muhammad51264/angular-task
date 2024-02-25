@@ -1,0 +1,39 @@
+.modal-container {
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  position: relative;
+  width: 53.5rem;
+  z-index: 1;
+}
+
+.btn-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.line {
+  background-color: var(--line-gray-color);
+  height: 0.0275rem;
+  width: 100%;
+}
+
+.search-input-container {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 90.625rem) {
+  .modal-container {
+    width: 85%;
+  }
+}

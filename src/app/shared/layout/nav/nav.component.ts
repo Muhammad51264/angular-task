@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   staticLocation = 'Mohammadpur Bus Stand, Dhaka';
+  isSideBarOpened = false;
+
+  openSideBar() {
+    console.log(this.isSideBarOpened)
+    this.isSideBarOpened=!this.isSideBarOpened;
+  }
 }
