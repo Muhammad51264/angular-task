@@ -1,28 +1,38 @@
-.nav-container{
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    list-style-type:none;
-    padding: 1rem 0;
-    position: fixed;
-    top: -0.125rem;
-    align-items: center;
-    width: 100vw;
+.nav-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  max-height: 5rem;
+  padding: 1rem 0 1rem 7%;
+  width: 100%;
 }
 
-.logo{
-    height: fit-content;
-    width: 12.3125rem;
+.logo {
+  height: fit-content;
+  width: 12.3125rem;
 }
 
-.map-marker{
-    width: 0.875rem;
-    height: 1.5625rem;
+.map-marker {
+  height: 1.5625rem;
+  width: 0.875rem;
 }
 
-.location-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
+.location-container {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 64rem) {
+  .location-container {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
 }

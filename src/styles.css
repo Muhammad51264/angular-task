@@ -1,5 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background-gray-color: rgba(245, 245, 245, 1);
+  --black-color: rgb(0, 0, 0);
+  --gray-color: rgb(80, 79, 79);
+  --gray-placeholder-color: rgba(158, 158, 158, 1);
+  --green-color: rgb(121, 185, 60);
+  --light-gray-color: rgb(117, 117, 117);
+  --light-green-color: rgb(121, 185, 60, 20%);
+  --light-orange-color: rgba(241, 114, 40, 0.1);
+  --bright-orange-color: rgba(241, 114, 40, 1);
+  --line-gray-color: rgb(238, 238, 238);
+  --orange-color: rgb(246, 89, 0);
+  --pink-color: rgb(255, 122, 122);
+  --primary-color: rgb(255, 174, 0);
+  --secondary-color: rgb(241, 114, 40);
+  --white-color: rgb(255, 255, 255);
+  --yellow-offer-color: rgba(255, 179, 14, 1);
+  --yellow-font-color: rgb(255, 184, 0);
+  --yellow-shadow-color: rgba(255, 174, 0, 29%);
+  --light-yellow-color: rgba(255, 206, 103, 0.22);
+  --white-secondary-color: rgba(253, 237, 202, 0);
+  --light-black-color: rgba(66, 66, 66, 1);
+  --yellow-icon-color:rgba(255, 178, 14, 1);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../src/./assets/SourceSansPro-Regular.ttf') format('truetype');
+}
+
 * {
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.shadow-effect {
+  box-shadow: 0rem 0.3125rem 0.625rem 0rem var(--yellow-shadow-color),
+    var(--yellow-shadow-color) 0rem 0.1875rem 0.4375rem -0.1875rem;
+}
+
+.section-container {
+  display: flex;
+  gap: 1rem;
+  margin: 4.2rem auto;
+  max-width: 1475.6496px;
+  overflow: auto;
+  padding: 0 1rem;
+}
+
+.section-container::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.section-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 0.375rem;
+}
+
+.section-container::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

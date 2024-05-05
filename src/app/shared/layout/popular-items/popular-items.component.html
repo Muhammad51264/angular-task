@@ -1,0 +1,18 @@
+<div class="popular-items-wrapper">
+  <h4>{{ title }}</h4>
+  <div
+    class="section-container popular-items-container"
+  >
+    <ng-container *ngFor="let item of popularItems">
+      <app-popular-item-card [item]="item"></app-popular-item-card>
+    </ng-container>
+  </div>
+  <ng-container *ngFor="let iconClass of iconClasses">
+    <div [ngClass]="[iconClass, 'arrow-icon']">
+      <img
+        src="../../../../assets/arrow.png"
+        alt="arrow"
+      />
+    </div>
+  </ng-container>
+</div>

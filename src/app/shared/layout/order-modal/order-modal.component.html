@@ -1,0 +1,46 @@
+<div class="modal-container shadow-effect">
+  <div class="btn-container">
+    <app-button
+      [buttonName]="'Delivery'"
+      [iconUrl]="'assets/delivery.svg'"
+      [buttonNameColor]="'var(--secondary-color)'"
+      [iconWidth]="'1.125rem'"
+      [iconHeight]="'1.125rem'"
+      [backgroundColor]="'var(--light-orange-color)'"
+      [padding]="'0.625rem 1.5rem'"
+    ></app-button>
+    <app-button
+      [buttonName]="'Pickup'"
+      [iconUrl]="'assets/pickup.svg'"
+      [buttonNameColor]="'var(--light-gray-color)'"
+      [iconWidth]="'1.125rem'"
+      [iconHeight]="'1.125rem'"
+      [padding]="'0.625rem 1.5rem'"
+    ></app-button>
+  </div>
+  <div class="line"></div>
+  <div class="search-container">
+    <div class="search-input-container">
+      <app-input
+        [placeHolder]="'Enter Your Address'"
+        iconUrl="assets/location.svg"
+        [iconHeight]="'2.125rem'"
+        [iconWidth]="'1.125rem'"
+        [fontSize]="'1.125rem'"
+      ></app-input>
+    </div>
+    <app-button
+      [buttonName]="'Find Food'"
+      [iconUrl]="'assets/search-white.svg'"
+      [buttonNameColor]="'var(--white-color)'"
+      [iconWidth]="'1.125rem'"
+      [backgroundColor]="
+        'linear-gradient(to right, var(--pink-color), var(--orange-color))'
+      "
+      [iconHeight]="'1.125rem'"
+      [padding]="'1.3125rem 3rem'"
+      [fontSize]="'1.125rem'"
+      (click)="findFood()"
+    ></app-button>
+  </div>
+</div>

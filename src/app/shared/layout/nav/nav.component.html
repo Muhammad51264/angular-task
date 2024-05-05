@@ -7,8 +7,37 @@
     <img class="map-marker" src="assets/map-marker-alt.svg" alt="map-marker" />
     <p>
       Current Location
-      <strong>{{staticLocation}}</strong>
+      <strong>{{ staticLocation }}</strong>
     </p>
   </li>
-  <li appAppShadowEffect>search Buttons</li>
+  <li>
+    <app-buttons-container></app-buttons-container>
+  </li>
+
+  <app-button
+    [iconUrl]="'assets/burger.png'"
+    [buttonName]="''"
+    [iconHeight]="'1.875rem'"
+    [iconWidth]="'1.875rem'"
+    [buttonClassName]="'btn-menu'"
+    (click)="openSideBar()"
+  ></app-button>
 </ul>
+
+<ng-container *ngIf="isSideBarOpened">
+  <app-sidebar>
+    <li>
+      <app-button
+        [buttonName]="'Search Food'"
+        [iconUrl]="'assets/Search.svg'"
+      ></app-button>
+    </li>
+    <li>
+      <app-button
+        [buttonName]="'Login'"
+        [buttonNameColor]="'var(--yellow-font-color)'"
+        [iconUrl]="'assets/user.svg'"
+      ></app-button>
+    </li>
+  </app-sidebar>
+</ng-container>
