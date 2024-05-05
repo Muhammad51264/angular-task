@@ -14,7 +14,7 @@ import { Component, Input } from '@angular/core';
       />
       <img />
       <p
-        [ngStyle]="{ color: buttonNameColor,fontSize, fontWeight: 'bold' }"
+        [ngStyle]="{ color: buttonNameColor, fontSize, fontWeight: 'bold' }"
         *ngIf="buttonName"
       >
         {{ buttonName }}
@@ -33,6 +33,13 @@ import { Component, Input } from '@angular/core';
 
   .btn-menu {
     display: none;
+  }
+
+  .custom-btn{
+    width:100%;
+    box-shadow: 
+  0px 20px 40px 0px rgba(250, 99, 35, 0.24),
+  0px 5px 10px 0px rgba(253, 114, 92, 0.22) !important;
   }
 
   @media screen and (max-width: 64rem) {

@@ -21,7 +21,6 @@ import { Component } from '@angular/core';
   display: flex;
   gap: 1.875rem;
   justify-content: space-between;
-  ma
 }
 
 @media screen and (max-width: 64rem) {

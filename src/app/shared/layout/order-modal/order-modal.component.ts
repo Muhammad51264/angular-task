@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class OrderModalComponent {
 
+  findFood(){
+    console.log('find food');
+  }
 }

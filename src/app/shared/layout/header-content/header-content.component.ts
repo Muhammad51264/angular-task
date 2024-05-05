@@ -40,6 +40,7 @@ import { Component } from '@angular/core';
   h6{
     text-align:center;
     font-size: 5vw;
+    padding : 0 0.3125rem;
   }
 }
   `,

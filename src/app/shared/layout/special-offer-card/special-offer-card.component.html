@@ -1,0 +1,29 @@
+<div class="card-container">
+  <div class="img-container">
+    <img src="{{ offer.imgLink }}" alt="offer-img" />
+    <div class="offer-text-container">
+      <h2 class="offer-text">
+        {{ offer.offerValue }}
+      </h2>
+      <div class="percentage-container">
+        <h5>%</h5>
+        <h6>Off</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="title-container">
+    <h6 class="title">{{ offer.title }}</h6>
+
+
+
+    <app-button
+    [buttonName]="offer.remainingDays + ' Days remaining'"
+    [buttonNameColor]="'var(--bright-orange-color)'"
+    [backgroundColor]="'var(--light-orange-color)'"
+    [padding]="'0.5rem 1rem'"
+    [fontSize]="'1.375rem'"
+  ></app-button>
+
+  </div>
+</div>

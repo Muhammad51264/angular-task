@@ -21,7 +21,13 @@
   <div class="line"></div>
   <div class="search-container">
     <div class="search-input-container">
-      <app-input [placeHolder]="'Enter Your Address'"></app-input>
+      <app-input
+        [placeHolder]="'Enter Your Address'"
+        iconUrl="assets/location.svg"
+        [iconHeight]="'2.125rem'"
+        [iconWidth]="'1.125rem'"
+        [fontSize]="'1.125rem'"
+      ></app-input>
     </div>
     <app-button
       [buttonName]="'Find Food'"
@@ -34,6 +40,7 @@
       [iconHeight]="'1.125rem'"
       [padding]="'1.3125rem 3rem'"
       [fontSize]="'1.125rem'"
+      (click)="findFood()"
     ></app-button>
   </div>
 </div>

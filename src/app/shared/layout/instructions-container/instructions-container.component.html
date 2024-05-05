@@ -1,0 +1,11 @@
+<section class="section-container instruction-container">
+    <h4>{{title}}</h4>
+    <div class="section-container instructions">
+        <ng-container *ngFor="let instruction of instructions">
+        
+            <app-instruction-card [instruction]="instruction"></app-instruction-card>
+
+        </ng-container>
+
+    </div>
+</section>

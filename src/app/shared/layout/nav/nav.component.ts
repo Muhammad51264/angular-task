@@ -10,7 +10,6 @@ export class NavComponent {
   isSideBarOpened = false;
 
   openSideBar() {
-    console.log(this.isSideBarOpened)
     this.isSideBarOpened=!this.isSideBarOpened;
   }
 }
